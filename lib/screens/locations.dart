@@ -9,18 +9,19 @@ class _LocationsState extends State<Locations> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.amber,
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: Text(
           'Change Location',
         style: TextStyle(
-          color: Colors.white
+          color: Colors.amber
         ),
         ),
         elevation: 0.0,
         centerTitle: true,
       ),
-      body: Text('YOU WANT A PIECE OF ME')
+      body: Center(child: Text('YOU WANT A PIECE OF ME',style: TextStyle(color: Colors.black),))
     );
   }
 }
