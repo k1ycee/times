@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:http/http.dart';
 import 'dart:convert';
 
@@ -21,7 +21,8 @@ class WorldTime{
     DateTime now = DateTime.parse(datetime);
     now = now.add(Duration(hours: int.parse(offset)));
 //    print(now);
-    time = now.toString();}
+    time = DateFormat.jm().format(now)
+    ;}
     catch(e){
       print ('There is an error somewhere: $e');
       time = 'I think i cant find the time';
