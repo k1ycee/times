@@ -15,7 +15,7 @@ class _LoadsState extends State<Loads> {
     WorldTime timer = WorldTime(location: 'Nigeria',flag: 'nigeria.png',url: 'Africa/Lagos');
     await timer.getTime();
     Navigator.pushReplacementNamed(context, '/home',arguments: {
-      'location': timer.location, 'flag': timer.flag, 'time': timer.time
+      'location': timer.location, 'flag': timer.flag, 'time': timer.time, 'dayNight': timer.dayNight,
     });
 
   }
